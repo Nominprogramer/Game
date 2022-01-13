@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/chsn.gd" type="Script" id=1]
+[ext_resource path="res://assets/redcard.png" type="Texture" id=2]
+
+[sub_resource type="ImageTexture" id=1]
+
+[node name="Redcard" type="Sprite"]
+position = Vector2( 174, 373 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 2 )
+normal_map = SubResource( 1 )
+
+[node name="play" type="Button" parent="."]
+modulate = Color( 0.937255, 0.619608, 0.619608, 0.6 )
+show_behind_parent = true
+margin_left = -118.0
+margin_top = -169.0
+margin_right = 117.0
+margin_bottom = 168.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = -37.0
+margin_top = -52.0
+margin_right = -9.0
+margin_bottom = -37.0
+rect_scale = Vector2( 3, 3 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="play" to="play" method="_on_play_pressed"]
