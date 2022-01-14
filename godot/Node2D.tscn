@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/Redcard.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/Greencard.tscn" type="PackedScene" id=2]
+[ext_resource path="res://settings.tscn" type="PackedScene" id=3]
 
-[node name="Node2D" type="Node2D"]
+[node name="Main Menu" type="Node2D"]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 328.0
@@ -16,16 +17,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="settings" type="Button" parent="."]
-margin_left = 348.0
-margin_top = 288.0
-margin_right = 476.0
-margin_bottom = 308.0
-rect_scale = Vector2( 2, 2 )
-text = "Settings "
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="settings" parent="." instance=ExtResource( 3 )]
 
 [node name="roadmap" type="Button" parent="."]
 margin_left = 349.0
