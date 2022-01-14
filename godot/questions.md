@@ -1,10 +1,18 @@
 # Questions 
 
+
 ## 1. If you saw god then will you doubt yourself?
 
 ## 2. If your mom was dying would you kill a thousand people to find the cure?
 
 ## 3. Would you kill Your family, so you may live?
+
+## 1. What operating system do you use?
+
+## 2. If your mom was dying would you kill a thousand people to find the cure?
+
+## 3. Would you kill You family, so you may live?
+
 
 ## 4. How do you think of yourself? Bad or Good
 
@@ -20,3 +28,5 @@ the path will change the ending the path will change depending on how the questi
 ## 3 - death path
 ## 4 - doubt path
 ## 5 - spirit path
+=======
+
