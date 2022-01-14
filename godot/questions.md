@@ -1,5 +1,6 @@
 # Questions 
 
+
 ## 1. If you saw god then will you doubt yourself?
 
 ## 2. If your mom was dying would you kill a thousand people to find the cure?
