@@ -13,12 +13,14 @@ var answers_2 = {
 	"answers":["NO","No","Nope","Bad","Million Dollars"]
 }
 
+var red_label = $Redcard.get_child(Label)
+var green_label = $Greencard.get_child(Label)
 
 
 
 func _physics_process(delta: float) -> void:
-	$No.text = answers_2.answers[current]
-	$Yes.text = answers_1.answers[current]
+	red_label.text = answers_2.answers[current]
+	green_label.text = answers_1.answers[current]
 	$Label.text = questions.questions[current]
 	if $Storer.data.has("God's Devotee"):
 		get_tree().change_scene("res://Node2D.tscn")
