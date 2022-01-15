@@ -34,4 +34,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="play" to="play" method="_on_play_pressed"]
+[connection signal="pressed" from="play" to="play" method="_on_redcard_pressed"]

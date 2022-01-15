@@ -2,5 +2,5 @@ extends Button
 
 
 
-func _on_quit_pressed() -> void:
+func _on_greencard_pressed() -> void:
 	get_tree().quit()

@@ -31,4 +31,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="quit" to="quit" method="_on_quit_pressed"]
+[connection signal="pressed" from="quit" to="quit" method="_on_greencard_pressed"]
