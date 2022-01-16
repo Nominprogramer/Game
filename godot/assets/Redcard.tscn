@@ -11,7 +11,7 @@ scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 2 )
 normal_map = SubResource( 1 )
 
-[node name="play" type="Button" parent="."]
+[node name="redbutton" type="Button" parent="."]
 modulate = Color( 0.937255, 0.619608, 0.619608, 0.6 )
 show_behind_parent = true
 margin_left = -118.0
@@ -35,4 +35,5 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[connection signal="pressed" from="play" to="play" method="_on_redcard_pressed"]
+[connection signal="pressed" from="redbutton" to="redbutton" method="_on_redcard_pressed"]
+[connection signal="pressed" from="redbutton" to="redbutton" method="_on_redbutton_pressed"]

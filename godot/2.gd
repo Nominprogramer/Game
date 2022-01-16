@@ -13,28 +13,22 @@ var answers_2 = {
 	"answers":["NO","No","Nope","Bad","Million Dollars"]
 }
 
-var red_label = $Redcard.get_child(Label)
-var green_label = $Greencard.get_child(Label)
-
-
-
 func _physics_process(delta: float) -> void:
-	red_label.text = answers_2.answers[current]
-	green_label.text = answers_1.answers[current]
+	$Redcard/label.text = answers_2.answers[current]
+	$Greencard/RichTextLabel3.text = answers_1.answers[current]
 	$Label.text = questions.questions[current]
 	if $Storer.data.has("God's Devotee"):
 		get_tree().change_scene("res://Node2D.tscn")
 	
 
-func _on_Yes_pressed() -> void:
-	$Storer.data.append($Yes.text)
+func _on_button_pressed() -> void:
+	$Storer.data.append($Greencard/RichTextLabel3.text)
 	if current <=3:
 		
 		current +=1
 
 
-func _on_No_pressed() -> void:
-	$Storer.data.append($No.text)
+func _on_redbutton_pressed() -> void:
+	$Storer.data.append($Redcard/label.text)
 	if current <=3:
-		
 		current +=1
