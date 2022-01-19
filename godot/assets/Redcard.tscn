@@ -11,7 +11,7 @@ scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 2 )
 normal_map = SubResource( 1 )
 
-[node name="play" type="Button" parent="."]
+[node name="redbutton" type="Button" parent="."]
 modulate = Color( 0.937255, 0.619608, 0.619608, 0.6 )
 show_behind_parent = true
 margin_left = -118.0
@@ -23,7 +23,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+[node name="label" type="RichTextLabel" parent="."]
 margin_left = -37.0
 margin_top = -52.0
 margin_right = -9.0
@@ -31,7 +31,9 @@ margin_bottom = -37.0
 rect_scale = Vector2( 3, 3 )
 text = "Play"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
-[connection signal="pressed" from="play" to="play" method="_on_play_pressed"]
+[connection signal="pressed" from="redbutton" to="redbutton" method="_on_redbutton_pressed"]
+[connection signal="pressed" from="redbutton" to="redbutton" method="_on_redcard_pressed"]
