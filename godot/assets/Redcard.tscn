@@ -35,5 +35,5 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[connection signal="pressed" from="redbutton" to="redbutton" method="_on_redcard_pressed"]
 [connection signal="pressed" from="redbutton" to="redbutton" method="_on_redbutton_pressed"]
+[connection signal="pressed" from="redbutton" to="redbutton" method="_on_redcard_pressed"]
